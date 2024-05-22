@@ -1,0 +1,219 @@
+%-------------------------
+% Resume in Latex
+% Author : Matty
+% Based on: https://github.com/jakegut/resume (which was itself based on https://github.com/sb2nov/resume)
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+
+\input{glyphtounicode}
+
+% -------------------- FONT OPTIONS --------------------
+% sans-serif
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% serif
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-1in} % Default was -.5in
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Subsection formatting
+\titleformat{\subsection}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% -------------------- CUSTOM COMMANDS --------------------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\setlength{\footskip}{4.08003pt}
+
+% -------------------- START OF DOCUMENT --------------------
+\begin{document}
+
+% -------------------- HEADING--------------------
+
+
+\vspace{-5pt}
+
+\begin{center}
+    \textbf{\Huge \scshape Divyansh Singh} \\ \vspace{8pt}
+    \small 
+    \faIcon{github}
+    \href{https://github.com/DivyanshAfk}{\underline{github.com/DivyanshAfk}} $  $
+    \faIcon{linkedin}
+    \href{https://www.linkedin.com/in/divyansh-singh-739960232}{\underline{linkedin.com/divyanshsingh}} $  $
+    \faIcon{envelope}
+    \href{mailto:divyanshsiit@gmail.com}
+    {\underline{divyanshsiit@gmail.com}}
+\end{center}
+% -------------------- Career Objective --------------------
+
+\section{Career Objective}
+\resumeSubHeadingListStart
+{To leverage my skills in software engineering and to contribute meaningfully, driving innovation and achieving excellence. Seeking opportunities to continually learn, grow, and make a positive impact within a dynamic and collaborative work environment.}
+\resumeSubHeadingListEnd
+
+% -------------------- EDUCATION --------------------
+
+\section{Education}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Birla Institute of Technology, Mesra}{May 2025}
+      {Bachelor of Technology in Electrical and Electronics Engineering, GPA: 8.05}{}
+      
+    \resumeSubheading
+      {Aklank Day Boarding Cum Reidential School}{2019-2021}
+      {Senior Secondary High School, CBSE Board: 91\%}{}
+
+      \resumeSubheading
+      {Stella Maris Convent School School}{2018-2019}
+      {High School, CBSE Board: 96.6\%}{}
+
+    
+
+  \resumeSubHeadingListEnd
+  
+  
+
+% -------------------- SKILLS --------------------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    
+     \textbf{Languages}{: C/C++, Python, Java, JavaScript/TypeScript, HTML/CSS, Motoko} \\
+     
+     \textbf{Tools}{: Git/GitHub, Unix Shell, Webpack, VS Code, IntelliJ CLion/PyCharm/IDEA, Atom}\\
+     
+     \textbf{Frameworks}{: React, Node.js, Tailwind, Bootsrap,OAuth, Web3} \\
+     
+     % \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+     
+    }}
+ \end{itemize}
+
+% -------------------- PROJECTS --------------------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+        \resumeProjectHeading
+        {\textbf{Paytm Clone App} $|$ \footnotesize\emph{MongoDB, React.Js, ExpressJs, NodeJs, Git, JWT Tokens, VS Code}}{}
+        \resumeItemListStart
+            \resumeItem{This project is a clone of the Paytm app, built using MongoDB, Express, and Node.js, with authentication handled by Zod and JWT.}
+            \resumeItem{Utilizes the MERN stack - MongoDB for the database, Express for the server framework, and Node.js for the back-end runtime environment}
+            \resumeItem{Employs JSON Web Tokens (JWT) for secure authentication, ensuring protected access to user-specific features and data.}
+             \resumeItem{ Replicates key Paytm features such as user registration, login, digital payments, and wallet management, providing a seamless user experience.}
+          \resumeItemListEnd
+    
+        \resumeProjectHeading
+        {\textbf{Real Time Weather Application} $|$ \footnotesize\emph{Javascript, HTML/CSS, EJS, API, Git, VS Code}}{}
+        \resumeItemListStart
+            \resumeItem{Real Time Weather Application}
+            \resumeItem{Developed a real-time weather app using OpenWeatherMap APIs, offering users accurate weather updates globally. The app displayed current conditions, hourly forecasts, and alerts.}
+            \resumeItem{Handles API requests efficiently, parsed responses, and featured error handling for reliability. The result was a user-friendly tool for accessing precise weather information anytime, anywhere}
+            
+          \resumeItemListEnd
+          
+          
+    \resumeSubHeadingListEnd
+
+% -------------------- Co-Curricular Activites --------------------
+\section{Co Curricular Activities}
+  \resumeSubHeadingListStart
+
+          \resumeProjectHeading
+          {\textbf{Village Education Programme} $|$ \footnotesize\emph{Volunteer}\vspace{8pt}}{Aug. 2022 -- May.2023}
+          {\small{taught Unprivileged Children in neighbouring villages twice a week.}}
+
+          \resumeProjectHeading
+          {\textbf{National Service Scheme}\vspace{8pt} $|$ \footnotesize\emph{Volunteer}}{2021 -- 2023}
+          \small{Routinely participated in cleanliness and awareness drives and actively donating blood. }
+
+          \resumeProjectHeading
+          {\textbf{Leetcode}  \footnotesize\emph{}\vspace{8pt}}{2021 -- Present}
+          {\small{Maintained a consistent streak on leetcode, demonstrating strong commitment to continuous learning and problem-solving skills in algorithmic and data structure challenges.}}
+\resumeSubHeadingListEnd 
+% ------------ Extra-Curricular Activites ------------------ 
+        \section{Extra-Curricular Activites}
+          \resumeSubHeadingListStart
+          \resumeProjectHeading
+          {\textbf{Sports}\vspace{8pt}}{2013 -- present}
+          {\small{Represented Hostel cricket team as the captain.}}
+
+    \resumeSubHeadingListEnd 
+
+\end{document}
